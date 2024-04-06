@@ -4,6 +4,7 @@ import Counter from "./components/Counter";
 import Header from './components/Header';
 import Auth from "./components/Auth";
 import UserProfile from "./components/UserProfile";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
       {!isAuth && <Auth /> }
       {isAuth && <UserProfile /> }
       <Counter />
+
+      <Footer/>
     </Fragment>
   );
 }
